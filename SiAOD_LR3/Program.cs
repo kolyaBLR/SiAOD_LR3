@@ -17,6 +17,7 @@ namespace SiAOD_LR3
             Console.WriteLine("add - добавление");
             Console.WriteLine("delete - удаление приоритетного");
             Console.WriteLine("search - поиск по имени");
+            Console.WriteLine("exit - выход");
             while (true)
             {
                 Console.Write("Введите команду:");
@@ -41,6 +42,8 @@ namespace SiAOD_LR3
                         string execute = result == -1 ? "Ничего не найдено." : "name:" + name + ", priority:" + priority;
                         Console.WriteLine(execute);
                         break;
+                    case "exit":
+                        return;
                     default:
                         Console.WriteLine("не верная команда.");
                         break;

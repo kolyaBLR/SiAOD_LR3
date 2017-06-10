@@ -39,7 +39,7 @@ namespace SiAOD_LR3
                         Console.Write("name:");
                         name = Console.ReadLine();
                         result = list.GetPriority(name);
-                        string execute = result == -1 ? "Ничего не найдено." : "name:" + name + ", priority:" + priority;
+                        string execute = result == -1 ? "Ничего не найдено." : "name:" + name + ", priority:" + result;
                         Console.WriteLine(execute);
                         break;
                     case "exit":
